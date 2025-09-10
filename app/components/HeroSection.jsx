@@ -1,6 +1,8 @@
-
 import React from "react";
 import Image from "next/image";
+import { TypingLoop } from "./TypingLoop";
+
+
 
 const HeroSection = () => {
     return (
@@ -8,18 +10,27 @@ const HeroSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-12">
                 <div className="col-span-7 place-self-center text-center sm:text-left">
                     <h1
-                        className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold"
+                        className="text-white mb-4"
                     >
                         <span
-                            className="text-transparent bg-clip-text bg-gradient-to-r via-purple-400 to-pink-500"
-                        >
+                            className="text-transparent text-4xl sm:text-5xl lg:text-6xl font-extrabold
+                            bg-clip-text bg-gradient-to-r via-purple-400 to-pink-500
+                            ">
                             Hello, I'm{" "}
                         </span>
-                        Davod
+                        <br />
+                        <TypingLoop
+                            text1="Davod"
+                            text2="a system developer"
+                            text3="also a full-stack web developer"
+                        />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-                        I build things for the web ekfhwgietgwejgtw
-                        hieibns  rwnio ntg ni puhtgthgptutrwepn iour
+                        I&apos;m a systems developer with
+                        a passion for building efficient backend solutions.
+                        I&apos;m also a full-stack web developer
+                        who enjoys creating clean,
+                        responsive and scalable web applications.
                     </p>
                     <div>
                         <button
