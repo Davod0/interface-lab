@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { BeakerIcon, Bars3Icon  } from "@heroicons/react/24/solid";
+import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
     {
@@ -53,6 +54,9 @@ const Navbar = () => {
                 </ul>
             </div>
         </div>
+        {navBarOpen ? (
+            <MenuOverlay links={navLinks} />
+        ) : null}
     </nav>
   );
 };
