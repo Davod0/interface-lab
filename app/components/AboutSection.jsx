@@ -2,9 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
-import TAB_DATA from "../../data/data";
-
-const tabData = TAB_DATA;
+import { tabData } from "../../data/data";
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
