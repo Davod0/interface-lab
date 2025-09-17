@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import TypingLoop from "./TypingLoop";
+import GithubIcon from "../../public/images/github-icon.svg";
+import LinkedinIcon from "../../public/images/linkedin-icon.svg";
 
 const HeroSection = () => {
   return (
@@ -31,22 +32,26 @@ const HeroSection = () => {
               <br className="hidden lg:block" />
               responsive and scalable web applications.
           </p>
-          <div>
+
+          <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start mb-2">
+            <div className="socials flex flex-row gap-2 sm:order-1 order-0">
+              <Link href="https://github.com/Davod0">
+                <Image src={GithubIcon} alt="Github Icon" />
+              </Link>
+              <Link href="/">
+                <Image src={LinkedinIcon} alt="Linkedin Icon" />
+              </Link>
+            </div>
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+              className="px-8 inline-block py-3 w-full sm:w-auto rounded-full bg-gradient-to-br from-primary-500
+                to-secondary-500 text-white transition-all duration-200
+                ease-in-out hover:shadow-lg hover:bg-gradient-to-br hover:from-primary-400 hover:to-secondary-400"
             >
-              Hire Me
-            </Link>
-            <Link
-              href="/"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
-            >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
-              </span>
+              Contact Me
             </Link>
           </div>
+
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
