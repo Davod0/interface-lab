@@ -1,22 +1,32 @@
 "use client";
 import { TypeAnimation } from 'react-type-animation';
+import '../globals.css';
 
-const TypingLoop= ({ text1, text2, text3 }) => {
+const TypingLoop = ({ text1, text2, text3 }) => {
   return (
-    <TypeAnimation className="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold mt-5"
-      sequence={[
-        text1,
-        1000,
-        text2,
-        1000,
-        text3,
-        1000,
-      ]}
-      wrapper="span"
-      speed={50}
-      style={{ fontSize: '2em', display: 'inline-block' }}
-      repeat={Infinity}
-    />
+    <div
+      className="text-white text-1xl sm:text-3xl lg:text-5xl font-extrabold mb-6 mt-1"
+      style={{
+        lineHeight: "1em",
+        minHeight: "2em",
+      }}
+    >
+      <TypeAnimation
+        sequence={[
+          text1,
+          1000,
+          text2,
+          1000,
+          text3,
+          1000,
+        ]}
+        wrapper="span"
+        speed={70}
+        style={{ display: 'inline-block' }}
+        repeat={Infinity}
+      />
+    </div>
   );
 };
+
 export default TypingLoop;
