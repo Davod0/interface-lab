@@ -3,7 +3,12 @@ import { TypeAnimation } from 'react-type-animation';
 
 const TypingLoop= ({ text1, text2, text3 }) => {
   return (
-    <div className="text-white text-1xl sm:text-2xl lg:text-4xl font-extrabold mb-6">
+    <div className="text-white text-1xl sm:text-3xl lg:text-5xl font-extrabold mb-6 mt-3"
+        style={{
+        lineHeight: "1em",
+        minHeight: "2em",
+      }}
+    >
       <TypeAnimation
         sequence={[
           text1,
@@ -14,8 +19,8 @@ const TypingLoop= ({ text1, text2, text3 }) => {
           1000,
         ]}
         wrapper="span"
-        speed={50}
-        style={{ fontSize: '2em', display: 'inline-block' }}
+        speed={70}
+        style={{ display: 'inline-block' }}
         repeat={Infinity}
       />
     </div>

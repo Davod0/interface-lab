@@ -21,10 +21,15 @@ const HeroSection = () => {
               Hello, I&apos;m{" "}
             </span>
           </h1>
-            <TypingLoop text1={"Davod"} text2={"a system developer"} text3={"also a mobile and web application developer"} />
+            <TypingLoop text1={"Davod"} text2={"a system developer"} text3={"also a full-stack web developer"} />
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+              I&apos;m a systems developer with
+              a passion for building efficient backend solutions.
+              <br className="hidden lg:block" />
+              I&apos;m also a full-stack web developer
+              who enjoys creating clean,
+              <br className="hidden lg:block" />
+              responsive and scalable web applications.
           </p>
           <div>
             <Link
