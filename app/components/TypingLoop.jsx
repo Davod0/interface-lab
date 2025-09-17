@@ -5,7 +5,7 @@ import '../globals.css';
 const TypingLoop = ({ text1, text2, text3 }) => {
   return (
     <div
-      className="text-white text-1xl sm:text-3xl lg:text-5xl font-extrabold mb-6 mt-3"
+      className="text-white text-1xl sm:text-3xl lg:text-5xl font-extrabold mb-6 mt-1"
       style={{
         lineHeight: "1em",
         minHeight: "2em",
