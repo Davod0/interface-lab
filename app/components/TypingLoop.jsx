@@ -1,10 +1,12 @@
 "use client";
 import { TypeAnimation } from 'react-type-animation';
+import '../globals.css';
 
-const TypingLoop= ({ text1, text2, text3 }) => {
+const TypingLoop = ({ text1, text2, text3 }) => {
   return (
-    <div className="text-white text-1xl sm:text-3xl lg:text-5xl font-extrabold mb-6 mt-3"
-        style={{
+    <div
+      className="text-white text-1xl sm:text-3xl lg:text-5xl font-extrabold mb-6 mt-3"
+      style={{
         lineHeight: "1em",
         minHeight: "2em",
       }}
@@ -24,7 +26,7 @@ const TypingLoop= ({ text1, text2, text3 }) => {
         repeat={Infinity}
       />
     </div>
-
   );
 };
+
 export default TypingLoop;
