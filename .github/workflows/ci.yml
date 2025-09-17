@@ -9,6 +9,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+
     strategy:
       matrix:
         node-version: [20.x]
