@@ -56,17 +56,17 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-4 place-self-center mt-4 lg:mt-0"
+          className="col-span-4 flex justify-center items-center mt-4 lg:mt-0"
         >
-        <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-          <Image
-            src="/images/pc3.png"
-            alt="hero image"
-            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            width={300}
-            height={300}
-          />
-        </div>
+          <div className="rounded-full w-[250px] h-[250px] sm:w-[220px] sm:h-[220px]
+                md:w-[280px] md:h-[280px] lg:w-[400px] lg:h-[400px] relative">
+            <Image
+              src="/images/pc3.png"
+              alt="hero image"
+              fill
+              priority
+            />
+          </div>
         </motion.div>
       </div>
     </section>
