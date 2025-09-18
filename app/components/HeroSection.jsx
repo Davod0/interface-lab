@@ -38,7 +38,7 @@ const HeroSection = () => {
               <Link href="https://github.com/Davod0">
                 <Image src={GithubIcon} alt="Github Icon" />
               </Link>
-              <Link href="/">
+              <Link href="https://www.linkedin.com/in/davod-nikoyi-0ba901294">
                 <Image src={LinkedinIcon} alt="Linkedin Icon" />
               </Link>
             </div>
