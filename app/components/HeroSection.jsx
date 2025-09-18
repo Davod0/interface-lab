@@ -9,7 +9,7 @@ import LinkedinIcon from "../../public/images/linkedin-icon.svg";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16">
+    <section id="home" className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -42,14 +42,19 @@ const HeroSection = () => {
                 <Image src={LinkedinIcon} alt="Linkedin Icon" />
               </Link>
             </div>
-            <Link
-              href="/#contact"
+            <button
+              onClick={() => {
+                const section = document.getElementById("contact");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
               className="px-8 inline-block py-3 w-full sm:w-auto rounded-full bg-gradient-to-br from-primary-500
                 to-secondary-500 text-white transition-all duration-200
-                ease-in-out hover:shadow-lg hover:bg-gradient-to-br hover:from-primary-400 hover:to-secondary-400"
+                ease-in-out hover:shadow-lg hover:bg-gradient-to-br hover:from-primary-400 hover:to-secondary-400 cursor-pointer"
             >
               Contact Me
-            </Link>
+            </button>
           </div>
         </motion.div>
         <motion.div

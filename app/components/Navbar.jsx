@@ -6,20 +6,31 @@ import MenuOverlay from "./MenuOverlay";
 import Image from "next/image";
 
 const navLinks = [
-  { title: "Home", path: "#home" },
-  { title: "About", path: "#about" },
-  { title: "Projects", path: "#projects" },
-  { title: "Contact", path: "#contact" },
+  { title: "Home", path: "home" },
+  { title: "About", path: "about" },
+  { title: "Projects", path: "projects" },
+  { title: "Contact", path: "contact" },
 ];
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setNavbarOpen(false);
+    }
+  };
+
   return (
     <nav className="fixed mx-auto border border-[#23272e] top-0 left-0 right-0 z-10
       bg-gradient-to-r from-[#18181b] via-[#121212] to-[#23272e] bg-opacity-90 shadow-lg backdrop-blur-lg">
-      <div className="flex w-full flex-wrap items-center justify-between lg:py-4 py-2 px-1">
-        <Link href={"/"} className="text-2xl md:text-5xl text-white font-semibold flex items-center gap-1">
+      <div className="flex w-full flex-wrap items-center justify-between lg:py-3 py-2 px-1">
+        <div
+          onClick={() => handleScroll("home")}
+          className="text-2xl md:text-5xl text-white font-semibold flex items-center gap-1 cursor-pointer"
+        >
           <Image
             src="/images/dav.jpg"
             alt="hero image"
@@ -27,7 +38,7 @@ const Navbar = () => {
             height={60}
             className="rounded-full object-cover ml-5 lg:ml-15"
           />
-        </Link>
+        </div>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
@@ -49,12 +60,12 @@ const Navbar = () => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-4 mt-0">
             {navLinks.map((link, index) => (
               <li key={index} className="relative group">
-                <Link
-                  href={link.path}
+                <button
+                  onClick={() => handleScroll(link.path)}
                   className="
                     text-[#ADB7BE] font-semibold px-4 py-2 transition-all duration-300 ease-in-out
                     hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r
-                    hover:from-primary-400 hover:to-secondary-600
+                    hover:from-primary-400 hover:to-secondary-600 cursor-pointer
                   "
                 >
                   {link.title}
@@ -65,7 +76,7 @@ const Navbar = () => {
                       rounded-full transition-all duration-300
                     "
                   ></span>
-                </Link>
+                </button>
               </li>
             ))}
           </ul>
