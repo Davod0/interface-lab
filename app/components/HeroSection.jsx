@@ -9,7 +9,7 @@ import LinkedinIcon from "../../public/images/linkedin-icon.svg";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16">
+    <section id="home" className="lg:py-16 scroll-mt-28">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -38,35 +38,40 @@ const HeroSection = () => {
               <Link href="https://github.com/Davod0">
                 <Image src={GithubIcon} alt="Github Icon" />
               </Link>
-              <Link href="/">
+              <Link href="https://www.linkedin.com/in/davod-nikoyi-0ba901294">
                 <Image src={LinkedinIcon} alt="Linkedin Icon" />
               </Link>
             </div>
-            <Link
-              href="/#contact"
+            <button
+              onClick={() => {
+                const section = document.getElementById("contact");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
               className="px-8 inline-block py-3 w-full sm:w-auto rounded-full bg-gradient-to-br from-primary-500
                 to-secondary-500 text-white transition-all duration-200
-                ease-in-out hover:shadow-lg hover:bg-gradient-to-br hover:from-primary-400 hover:to-secondary-400"
+                ease-in-out hover:shadow-lg hover:bg-gradient-to-br hover:from-primary-400 hover:to-secondary-400 cursor-pointer"
             >
               Contact Me
-            </Link>
+            </button>
           </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-4 place-self-center mt-4 lg:mt-0"
+          className="col-span-4 flex justify-center items-center mt-4 lg:mt-0"
         >
-        <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-          <Image
-            src="/images/pc3.png"
-            alt="hero image"
-            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            width={300}
-            height={300}
-          />
-        </div>
+          <div className="rounded-full w-[250px] h-[250px] sm:w-[220px] sm:h-[220px]
+                md:w-[280px] md:h-[280px] lg:w-[400px] lg:h-[400px] relative">
+            <Image
+              src="/images/pc3.png"
+              alt="hero image"
+              fill
+              priority
+            />
+          </div>
         </motion.div>
       </div>
     </section>

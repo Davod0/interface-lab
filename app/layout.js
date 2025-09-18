@@ -16,7 +16,7 @@ export const metadata = {
   title: "Davod Nikoyi",
   description: "Davod's personal portfolio website",
   icons: {
-    icon: "./favicon.ico",
+    icon: "./images/favicon.ico",
   },
 };
 
