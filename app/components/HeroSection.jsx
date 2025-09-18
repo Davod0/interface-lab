@@ -9,7 +9,7 @@ import LinkedinIcon from "../../public/images/linkedin-icon.svg";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="lg:py-16">
+    <section id="home" className="lg:py-16 scroll-mt-28">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
