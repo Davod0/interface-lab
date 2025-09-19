@@ -1,24 +1,31 @@
 import React from "react";
-import { motion } from "framer-motion";
-
-const variants = {
-  default: { width: 0 },
-  active: { width: "calc(100% - 0.75rem)" },
-};
 
 const TabButton = ({ active, selectTab, children }) => {
-  const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
-
   return (
-    <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
+    <button
+      onClick={selectTab}
+      className="relative group mr-3 font-semibold transition-all duration-300 ease-in-out"
+    >
+      <span
+        className={`
+          bg-clip-text text-transparent cursor-pointer
+          transition-all duration-500 ease-in-out
+          ${active
+            ? "bg-gradient-to-r from-primary-400 to-secondary-600"
+            : "bg-gradient-to-r from-[#ADB7BE] to-[#ADB7BE]"}
+          group-hover:from-primary-400 group-hover:to-secondary-600
+        `}
+      >
         {children}
-      </p>
-      <motion.div
-        animate={active ? "active" : "default"}
-        variants={variants}
-        className="h-1 bg-primary-500 mt-2 mr-3"
-      ></motion.div>
+      </span>
+      <span
+        className={`
+          block absolute left-1/2 -translate-x-1/2 -bottom-1.5 h-0.5
+          ${active ? "w-full" : "w-0"}
+          group-hover:w-full bg-gradient-to-r from-primary-400 to-secondary-600
+          rounded-full transition-all duration-300
+        `}
+      ></span>
     </button>
   );
 };

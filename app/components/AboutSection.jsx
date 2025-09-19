@@ -23,34 +23,28 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            I am a system developer with a strong passion for building scalable backend solutions,
+            as well as a full-stack web developer focused on creating interactive and
+            responsive web applications. I am also familiar with mobile application
+            development and have built some cross-platform mobile apps using React Native.
+            I have experience with a variety of frameworks and programming languages, but
+            my core stack includes technologies such as .NET, Next.js, React, React Native,
+            C#, JavaScript, TypeScript, MySQL, and MongoDB.
           </p>
           <div className="flex flex-row justify-start mt-8">
+            <TabButton
+              selectTab={() => handleTabChange("services")}
+              active={tab === "services"}
+            >
+              {" "}
+              Services{" "}
+            </TabButton>
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
               {" "}
               Skills{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
             </TabButton>
           </div>
           <div className="mt-8">

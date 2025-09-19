@@ -1,38 +1,42 @@
 const tabData = [
   {
+    title: "Services",
+    id: "services",
+    content: (
+      <ul className="list-disc pl-2">
+      <li>Web Development</li>
+      <li>Mobile Development</li>
+      <li>Backend & API Development</li>
+      </ul>
+    ),
+  },
+  {
     title: "Skills",
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
+        <li>.NET</li>
         <li>React</li>
+        <li>React Native</li>
+        <li>Next.js</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>C#</li>
+        <li>MySQL</li>
+        <li>MongoDB</li>
       </ul>
     ),
   },
-  {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-      </ul>
-    ),
-  },
+  // {
+  //   title: "Certifications",
+  //   id: "certifications",
+  //   content: (
+  //     <ul className="list-disc pl-2">
+  //       <li>AWS Cloud Practitioner</li>
+  //       <li>Google Professional Cloud Developer</li>
+  //     </ul>
+  //   ),
+  // },
 ];
 
 export { tabData };
