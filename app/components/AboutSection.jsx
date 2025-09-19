@@ -1,8 +1,8 @@
 "use client";
 import React, { useTransition, useState } from "react";
-import Image from "next/image";
 import TabButton from "./TabButton";
 import { tabData } from "../../data/data";
+import TechStack from "./TechStack";
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
@@ -16,10 +16,7 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="text-white mt:5 lg:mt-10 mb-20 scroll-mt-10">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png"
-        alt="About Image"
-        width={500} height={500} />
+      <div className="md:grid md:grid-cols-2 gap-8 items-stretch py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
@@ -47,13 +44,16 @@ const AboutSection = () => {
               Skills{" "}
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-8 min-h-[250px]">
             {tabData.find((t) => t.id === tab).content}
           </div>
         </div>
+        <TechStack />
       </div>
     </section>
   );
 };
 
 export default AboutSection;
+
+
