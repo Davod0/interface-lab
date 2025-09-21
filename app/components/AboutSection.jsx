@@ -24,9 +24,9 @@ const AboutSection = () => {
             as well as a full-stack web developer focused on creating interactive and
             responsive web applications. I am also familiar with mobile application
             development and have built some cross-platform mobile apps using React Native.
-            I have experience with a variety of frameworks and programming languages, but
-            my core stack includes technologies such as .NET, Next.js, React, React Native,
-            C#, JavaScript, TypeScript, MySQL, and MongoDB.
+            I have experience with a variety of frameworks and programming languages but
+            my core stack includes technologies such as .NET, React, React Native, Next.js,
+            C#, JavaScript, TypeScript, MySQL and Firebase.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

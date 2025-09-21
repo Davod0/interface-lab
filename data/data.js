@@ -19,11 +19,11 @@ const tabData = [
         <li>React</li>
         <li>React Native</li>
         <li>Next.js</li>
+        <li>C#</li>
         <li>JavaScript</li>
         <li>TypeScript</li>
-        <li>C#</li>
         <li>MySQL</li>
-        <li>MongoDB</li>
+        <li>Firebase</li>
       </ul>
     ),
   },
