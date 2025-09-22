@@ -44,21 +44,21 @@ export { tabData };
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "Next.js Portfolio Website",
+    description: "This is my personal portfolio website, built using Next.js, JavaScript and Tailwind CSS. It is fully responsive and hosted on Netlify.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Davod0/interface-lab",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Pointly Web Application",
+    description: "Pointly is a web application designed to support pointing sessions for estimating the time required for different tickets, as well as retrospective meetings during development sprints. The application is built with Next.js, TypeScript and Tailwind CSS, and its backend is powered by Firebase. The application is hosted on Google Cloud Run.",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Davod0/pointly",
+    previewUrl: "https://pointly-357808137221.europe-north1.run.app",
   },
   {
     id: 3,
