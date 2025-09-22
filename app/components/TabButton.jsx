@@ -23,7 +23,7 @@ const TabButton = ({ active, selectTab, children }) => {
           block absolute left-1/2 -translate-x-1/2 -bottom-1.5 h-0.5
           ${active ? "w-full" : "w-0"}
           group-hover:w-full bg-gradient-to-r from-primary-400 to-secondary-600
-          rounded-full transition-all duration-500
+          rounded-full transition-all duration-300
         `}
       ></span>
     </button>
