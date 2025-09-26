@@ -44,7 +44,7 @@ export { tabData };
 const projectsData = [
   {
     id: 1,
-    title: "Next.js Portfolio Website",
+    title: "Portfolio Website",
     description: "This is my personal portfolio website, built using Next.js, JavaScript and Tailwind CSS. It is fully responsive and hosted on Netlify.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
@@ -71,11 +71,16 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: `Household Management Mobile Application`,
+    description: `This is a household management mobile application project built with React Native, Expo and TypeScript, using Firebase as the backend.
+    Users can create accounts, join or manage households and track chores. Owners handle join requests and assign tasks,
+    while members can complete and monitor them.
+    Each user has a profile with a unique avatar, theme settings and can switch between households.
+    The app includes a daily chore overview and weekly/monthly statistics on tasks completed by each member.
+    This app is not currently deployed.`,
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Davod0/App-Development-Household-Application",
     previewUrl: "/",
   },
   {
