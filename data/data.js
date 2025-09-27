@@ -62,11 +62,19 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Cinema Time",
+    description: `
+    Cinema-Time is a modular web application where I demonstrate my skills
+    in understanding and implementing a full-stack solution with .NET technologies.
+    The web application has a Blazor frontend, an ASP.NET Core Web API
+    and a SQLite database, structured using clean architecture with separate projects for Core logic,
+    Infrastructure, API and testing. It supports unit and integration tests for reliability and includes
+    a Next.js admin interface for managing salons, reservations, movies, and screenings.
+    The application allows users to view upcoming movies and reserve seats for showings.
+    `,
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Davod0/cinema-time",
     previewUrl: "/",
   },
   {
