@@ -44,7 +44,7 @@ export { tabData };
 const projectsData = [
   {
     id: 1,
-    title: "Portfolio Website",
+    title: "Portfolio",
     description: "This is my personal portfolio website, built using Next.js, JavaScript and Tailwind CSS. It is fully responsive and hosted on Netlify.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
@@ -53,7 +53,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Pointly Web Application",
+    title: "Pointly",
     description: "Pointly is a web application designed to support pointing sessions for estimating the time required for different tickets, as well as retrospective meetings during development sprints. The application is built with Next.js, TypeScript and Tailwind CSS, and its backend is powered by Firebase. The application is hosted on Google Cloud Run.",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
@@ -70,7 +70,7 @@ const projectsData = [
     and a SQLite database, structured using clean architecture with separate projects for Core logic,
     Infrastructure, API and testing. It supports unit and integration tests for reliability and includes
     a Next.js admin interface for managing salons, reservations, movies, and screenings.
-    The application allows users to view upcoming movies and reserve seats for showings.
+    The application allows users to view upcoming movies and reserve seats for showings. This project is not currently deployed.
     `,
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
@@ -79,7 +79,7 @@ const projectsData = [
   },
   {
     id: 4,
-    title: `Household Management Mobile Application`,
+    title: `Household Management`,
     description: `This is a household management mobile application project built with React Native, Expo and TypeScript, using Firebase as the backend.
     Users can create accounts, join or manage households and track chores. Owners handle join requests and assign tasks,
     while members can complete and monitor them.
@@ -93,11 +93,16 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "Renting Fire Extinguishers",
+    description: `
+    This project is a web application developed with Vue.js and Nuxt.js using JavaScript that
+    simulates the process of renting fire extinguishers. It enables users to browse available
+    products, view detailed information and rent each extinguisher for a period. The project was
+    created as a learning exercise to practice working with the Vue framework and to explore the capabilities of Nuxt.js.
+    The application is not currently deployed.`,
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Davod0/Nuxt-Vue-Client-Application",
     previewUrl: "/",
   },
   {
