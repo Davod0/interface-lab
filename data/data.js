@@ -62,20 +62,16 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Cinema Time",
+    title: "Snap Store",
     description: `
-    Cinema-Time is a modular web application where I demonstrate my skills
-    in understanding and implementing a full-stack solution with .NET technologies.
-    The web application has a Blazor frontend, an ASP.NET Core Web API
-    and a SQLite database, structured using clean architecture with separate projects for Core logic,
-    Infrastructure, API and testing. It supports unit and integration tests for reliability and includes
-    a Next.js admin interface for managing salons, reservations, movies, and screenings.
-    The application allows users to view upcoming movies and reserve seats for showings. This project is not currently deployed.
+    Snap Store is a web application built with Next.js, TypeScript, Prisma, MongoDB and MUI.
+    It enables users to browse and order electronic products. This project was created purely
+    for practice purposes and is not a real online store. A live preview of the application is hosted on Netlify.
     `,
-    image: "/images/projects/3.png",
+    image: "/images/projects/6.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/Davod0/cinema-time",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Davod0/snap-store",
+    previewUrl: "https://snap-store-eta.vercel.app",
   },
   {
     id: 4,
@@ -107,15 +103,19 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
+    title: "Cinema Time",
     description: `
-    Snap Store is a web application built with Next.js, TypeScript, Prisma, MongoDB and MUI.
-    It enables users to browse and order electronic products. This project was created purely
-    for practice purposes and is not a real online store. A live preview of the application is hosted on Netlify.
+    Cinema-Time is a modular web application where I demonstrate my skills
+    in understanding and implementing a full-stack solution with .NET technologies.
+    The web application has a Blazor frontend, an ASP.NET Core Web API
+    and a SQLite database, structured using clean architecture with separate projects for Core logic,
+    Infrastructure, API and testing. It supports unit and integration tests for reliability and includes
+    a Next.js admin interface for managing salons, reservations, movies, and screenings.
+    The application allows users to view upcoming movies and reserve seats for showings. This project is not currently deployed.
     `,
-    image: "/images/projects/6.png",
+    image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/Davod0/snap-store",
+    gitUrl: "https://github.com/Davod0/cinema-time",
     previewUrl: "/",
   },
 ];
