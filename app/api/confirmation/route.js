@@ -13,7 +13,7 @@ export async function POST(req) {
       subject: "Davod Nikoyi",
       react: (
         <>
-            <h1>Hi there, and thank you for reaching out!</h1>
+            <h1>Hi there and thank you for reaching out!</h1>
               <p>I’ve received your message and will
                 try my best to get back to you as soon as possible.
             </p>
