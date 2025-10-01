@@ -35,12 +35,13 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start mb-2">
             <div className="socials flex flex-row gap-2 sm:order-1 order-0">
-              <Link href="https://github.com/Davod0">
-                <Image src={GithubIcon} alt="Github Icon" />
-              </Link>
-              <Link href="https://www.linkedin.com/in/davod-nikoyi-0ba901294">
-                <Image src={LinkedinIcon} alt="Linkedin Icon" />
-              </Link>
+                <a href="https://github.com/Davod0" target="_blank" rel="noopener noreferrer">
+                  <Image src={GithubIcon} alt="Github Icon" />
+                </a>
+
+                <a href="https://www.linkedin.com/in/davod-nikoyi-0ba901294" target="_blank" rel="noopener noreferrer">
+                  <Image src={LinkedinIcon} alt="Linkedin Icon" />
+                </a>
             </div>
             <button
               onClick={() => {

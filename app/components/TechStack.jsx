@@ -18,7 +18,7 @@ const techIcons = [
     { src: "/tech-stack/Nuxt JS.svg", alt: "Nuxt.js" },
     { src: "/tech-stack/Redux.svg", alt: "Redux" },
     { src: "/tech-stack/Node.js.svg", alt: "Node.js" },
-    { src: "/tech-stack/Express.svg", alt: "Express.js" },
+    // { src: "/tech-stack/Express.svg", alt: "Express.js" },
     { src: "/tech-stack/Nest.js.svg", alt: "NestJS" },
     { src: "/tech-stack/NET.svg", alt: ".NET" },
 
@@ -31,11 +31,11 @@ const techIcons = [
     { src: "/tech-stack/Ubuntu.svg", alt: "Ubuntu" },
     { src: "/tech-stack/Git.svg", alt: "Git" },
     { src: "images/github-icon.svg", alt: "GitHub" },
-    { src: "/tech-stack/GitLab.svg", alt: "GitLab" },
+    // { src: "/tech-stack/GitLab.svg", alt: "GitLab" },
     { src: "/tech-stack/Postman.svg", alt: "Postman" },
-    { src: "/tech-stack/Visual Studio.svg", alt: "Visual Studio" },
-    { src: "/tech-stack/Visual Studio Code (VS Code).svg", alt: "Visual Studio Code" },
-    { src: "/tech-stack/Android Studio.svg", alt: "Android Studio" },
+    // { src: "/tech-stack/Visual Studio.svg", alt: "Visual Studio" },
+    // { src: "/tech-stack/Visual Studio Code (VS Code).svg", alt: "Visual Studio Code" },
+    // { src: "/tech-stack/Android Studio.svg", alt: "Android Studio" },
   // { src: "/tech-stack/Storybook.svg", alt: "Storybook" },
 
 ];
