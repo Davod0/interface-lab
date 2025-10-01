@@ -15,7 +15,7 @@ const EmailSection = () => {
       message: e.target.message.value,
     };
     const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    const endpoint = "/api/contact";
 
     const options = {
       method: "POST",
@@ -26,11 +26,17 @@ const EmailSection = () => {
     };
 
     const response = await fetch(endpoint, options);
-    const resData = await response.json();
 
     if (response.status === 200) {
-      console.log("Message sent.");
       setEmailSubmitted(true);
+
+      await fetch("/api/confirmation", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email: data.email, subject: data.subject }),
+    });
     }
   };
 
