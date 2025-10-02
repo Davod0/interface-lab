@@ -18,7 +18,7 @@ const Navbar = () => {
   const scrollLinkProps = (id, customOffset = -90) => ({
     to: id,
     smooth: "easeInOutQuad",
-    duration: 1500,
+    duration: 1200,
     offset: customOffset,
     onClick: () => setNavbarOpen(false),
   });
@@ -65,7 +65,7 @@ const Navbar = () => {
                 <Link
                   {...scrollLinkProps(link.path, link.offset)}
                   className="
-                    text-[#ADB7BE] font-semibold px-4 py-2 transition-all duration-300 ease-in-out
+                    text-[#ADB7BE] font-semibold px-4 py-2 transition-all duration-500 ease-in-out
                     hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r
                     hover:from-primary-400 hover:to-secondary-600 cursor-pointer
                   "
@@ -75,7 +75,7 @@ const Navbar = () => {
                     className="
                       block absolute left-1/2 -translate-x-1/2 -bottom-1 h-0.5 w-0
                       group-hover:w-full bg-gradient-to-r from-primary-400 to-secondary-600
-                      rounded-full transition-all duration-300
+                      rounded-full transition-all duration-500
                     "
                   ></span>
                 </Link>
