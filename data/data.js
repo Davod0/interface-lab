@@ -49,7 +49,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Davod0/interface-lab",
-    previewUrl: "/",
+    previewUrl: "https://davodnikoyi.com",
   },
   {
     id: 2,
@@ -80,12 +80,11 @@ const projectsData = [
     Users can create accounts, join or manage households and track chores. Owners handle join requests and assign tasks,
     while members can complete and monitor them.
     Each user has a profile with a unique avatar, theme settings and can switch between households.
-    The app includes a daily chore overview and weekly/monthly statistics on tasks completed by each member.
-    This app is not currently deployed.`,
+    The app includes a daily chore overview and weekly/monthly statistics on tasks completed by each member.`,
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/Davod0/App-Development-Household-Application",
-    previewUrl: "/",
+    previewUrl: "",
   },
   {
     id: 5,
@@ -94,12 +93,11 @@ const projectsData = [
     This project is a web application developed with Vue.js and Nuxt.js using JavaScript that
     simulates the process of renting fire extinguishers. It enables users to browse available
     products, view detailed information and rent each extinguisher for a period. The project was
-    created as a learning exercise to practice working with the Vue framework and to explore the capabilities of Nuxt.js.
-    The application is not currently deployed.`,
+    created as a learning exercise to practice working with the Vue framework and to explore the capabilities of Nuxt.js.`,
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Davod0/Nuxt-Vue-Client-Application",
-    previewUrl: "/",
+    previewUrl: "",
   },
   {
     id: 6,
@@ -111,12 +109,11 @@ const projectsData = [
     and a SQLite database, structured using clean architecture with separate projects for Core logic,
     Infrastructure, API and testing. It supports unit and integration tests for reliability and includes
     a Next.js admin interface for managing salons, reservations, movies, and screenings.
-    The application allows users to view upcoming movies and reserve seats for showings. This project is not currently deployed.
-    `,
+    The application allows users to view upcoming movies and reserve seats for showings.`,
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Davod0/cinema-time",
-    previewUrl: "/",
+    previewUrl: "",
   },
 ];
 
