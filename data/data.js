@@ -64,9 +64,10 @@ const projectsData = [
     id: 3,
     title: "Snap Store",
     description: `
-    Snap Store is a web application built with Next.js, TypeScript, Prisma, MongoDB and MUI.
-    It enables users to browse and order electronic products. This project was created purely
-    for practice purposes and is not a real online store. A live preview of the application is hosted on Netlify.
+    Snap Store is a web application built with Next.js, TypeScript and MUI. Prisma is used for data modeling
+    and MongoDB serves as the database provider.
+    Snap store enables users to browse and order electronic products. This project was created purely
+    for practice purposes and is not a real online store. A live version of the application is hosted on Vercel.
     `,
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
@@ -90,8 +91,8 @@ const projectsData = [
     id: 5,
     title: "Renting Fire Extinguishers",
     description: `
-    This project is a web application developed with Vue.js and Nuxt.js using JavaScript that
-    simulates the process of renting fire extinguishers. It enables users to browse available
+    This project is a web application developed with Vue.js and Nuxt.js using JavaScript.
+    This application simulates the process of renting fire extinguishers. It enables users to browse available
     products, view detailed information and rent each extinguisher for a period. The project was
     created as a learning exercise to practice working with the Vue framework and to explore the capabilities of Nuxt.js.`,
     image: "/images/projects/5.png",
