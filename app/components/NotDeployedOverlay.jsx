@@ -13,7 +13,7 @@ const NotDeployedOverlay = ({ visible }) => (
     }}
   >
     <span className="text-white text-lg md:text-lg font-medium px-6 py-3 rounded-lg shadow-lg">
-      This project does not have a deployed version
+      This project does not have a live version
     </span>
   </div>
 );
