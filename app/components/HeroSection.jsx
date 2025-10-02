@@ -2,14 +2,14 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import TypingLoop from "./TypingLoop";
 import GithubIcon from "../../public/images/github-icon.svg";
 import LinkedinIcon from "../../public/images/linkedin-icon.svg";
+import { Link } from "react-scroll";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="lg:py-16 scroll-mt-28">
+    <section id="home" className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -43,19 +43,34 @@ const HeroSection = () => {
                   <Image src={LinkedinIcon} alt="Linkedin Icon" />
                 </a>
             </div>
-            <button
-              onClick={() => {
-                const section = document.getElementById("contact");
-                if (section) {
-                  section.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-              className="px-8 inline-block py-3 w-full sm:w-auto rounded-full bg-gradient-to-br from-primary-500
-                to-secondary-500 text-white transition-all duration-200
-                ease-in-out hover:shadow-lg hover:bg-gradient-to-br hover:from-primary-400 hover:to-secondary-400 cursor-pointer"
+            <Link
+              to="contact"
+              smooth="easeInOutQuad"
+              duration={1500}
+              offset={-90}
+              tabIndex={0}
+              role="button"
+              className="
+                relative px-8 py-3 w-full sm:w-auto rounded-full
+                bg-gradient-to-r from-primary-400 to-secondary-600
+                text-white font-semibold shadow-md
+                transition-all duration-500 ease-out
+                overflow-hidden
+                focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2
+                cursor-pointer
+              "
             >
-              Contact Me
-            </button>
+              <span className="relative z-10">Contact Me</span>
+              <span
+                className="
+                  absolute inset-0 rounded-full
+                  bg-gradient-to-r from-secondary-600 to-primary-400
+                  transform -translate-x-full
+                  transition-transform duration-500 ease-out
+                  hover:translate-x-0
+                "
+              ></span>
+            </Link>
           </div>
         </motion.div>
         <motion.div

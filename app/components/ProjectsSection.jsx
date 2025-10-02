@@ -5,8 +5,6 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 import { projectsData } from "../../data/data";
 
-
-
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
@@ -26,8 +24,8 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="scroll-mt-22">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-5">
+    <section id="projects">
+      <h2 className="text-center text-4xl font-bold text-white mt-6 mb-5">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
