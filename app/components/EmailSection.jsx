@@ -131,15 +131,27 @@ const EmailSection = () => {
               />
             </div>
             <button
-            type="submit"
-            className="
-                px-8 py-3 w-full sm:w-auto rounded-full bg-gradient-to-br from-primary-500 to-secondary-500
-                text-white font-semibold transition-all duration-200 ease-in-out
-                shadow-md hover:shadow-lg
-                hover:bg-gradient-to-br hover:from-primary-400 hover:to-secondary-400
-                focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 cursor-pointer"
+              type="submit"
+              className="
+                relative px-8 py-3 w-full sm:w-auto rounded-full
+                bg-gradient-to-r from-primary-400 to-secondary-600
+                text-white font-semibold shadow-md
+                transition-all duration-500 ease-out
+                overflow-hidden
+                focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2
+                cursor-pointer
+              "
             >
-            Send Message
+              <span className="relative z-10">Send Message</span>
+              <span
+                className="
+                  absolute inset-0 rounded-full
+                  bg-gradient-to-r from-secondary-600 to-primary-400
+                  transform -translate-x-full
+                  transition-transform duration-100 ease-out
+                  hover:translate-x-0
+                "
+              ></span>
             </button>
           </form>
         )}
