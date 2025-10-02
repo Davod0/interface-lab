@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import TypingLoop from "./TypingLoop";
 import GithubIcon from "../../public/images/github-icon.svg";
 import LinkedinIcon from "../../public/images/linkedin-icon.svg";

@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
+import { Link } from "react-scroll";
 
-const MenuOverlay = ({ links, handleScroll }) => {
+const MenuOverlay = ({ links, scrollLinkProps }) => {
   return (
     <div className="absolute top-full left-0 w-full bg-gradient-to-r from-[#18181b] via-[#121212] to-[#23272e] z-40 border-t border-[#23272e] shadow-lg">
       <ul className="flex flex-col py-3 items-center space-y-2">
         {links.map((link, index) => (
           <li key={index}>
-            <button
-              onClick={() => handleScroll(link.path)}
+            <Link
+              {...scrollLinkProps(link.path, link.offset)}
               className="
                 text-[#ADB7BE] font-medium px-3 py-1 text-sm sm:text-base
                 transition-all duration-300 ease-in-out
@@ -17,7 +18,7 @@ const MenuOverlay = ({ links, handleScroll }) => {
               "
             >
               {link.title}
-            </button>
+            </Link>
           </li>
         ))}
       </ul>
