@@ -5,10 +5,11 @@ import { motion } from "framer-motion";
 import TypingLoop from "./TypingLoop";
 import GithubIcon from "../../public/images/github-icon.svg";
 import LinkedinIcon from "../../public/images/linkedin-icon.svg";
+import { Link } from "react-scroll";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="lg:py-16 scroll-mt-28">
+    <section id="home" className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -42,13 +43,13 @@ const HeroSection = () => {
                   <Image src={LinkedinIcon} alt="Linkedin Icon" />
                 </a>
             </div>
-            <button
-              onClick={() => {
-                const section = document.getElementById("contact");
-                if (section) {
-                  section.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
+            <Link
+              to="contact"
+              smooth="easeInOutQuad"
+              duration={1500}
+              offset={-90}
+              tabIndex={0}
+              role="button"
               className="
                 relative px-8 py-3 w-full sm:w-auto rounded-full
                 bg-gradient-to-r from-primary-400 to-secondary-600
@@ -69,7 +70,7 @@ const HeroSection = () => {
                   hover:translate-x-0
                 "
               ></span>
-            </button>
+            </Link>
           </div>
         </motion.div>
         <motion.div
