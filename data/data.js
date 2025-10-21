@@ -49,7 +49,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Davod0/interface-lab",
-    previewUrl: "https://davodnikoyi.com",
+    previewUrl: "https://davodnikoyi.netlify.app",
   },
   {
     id: 2,
