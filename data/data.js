@@ -49,7 +49,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Davod0/interface-lab",
-    previewUrl: "https://davodnikoyi.netlify.app",
+    previewUrl: "https://davodnikoyi.com",
   },
   {
     id: 2,
@@ -94,11 +94,12 @@ const projectsData = [
     This project is a web application developed with Vue.js and Nuxt.js using JavaScript.
     This application simulates the process of renting fire extinguishers. It enables users to browse available
     products, view detailed information and rent each extinguisher for a period. The project was
-    created as a learning exercise to practice working with the Vue framework and to explore the capabilities of Nuxt.js.`,
+    created as a learning exercise to practice working with the Vue framework and to explore the capabilities of Nuxt.js.
+    This application is hosted on Netlify.`,
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Davod0/Nuxt-Vue-Client-Application",
-    previewUrl: "",
+    previewUrl: "https://fireextinguisher.netlify.app",
   },
   {
     id: 6,
