@@ -25,20 +25,20 @@ export const metadata = {
     siteName: "Davod Nikoyi",
     images: [
       {
-        url: "/images/dav.jpg",
+        url: "./images/dav.png",
         width: 1200,
         height: 630,
         alt: "Davod Nikoyi Portfolio",
       },
     ],
-    locale: "en_US",
+    locale: "en_SE",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Davod Nikoyi",
     description: "Davod's portfolio website",
-    images: ["/images/dav.jpg"],
+    images: ["./images/dav.png"],
   },
 };
 
