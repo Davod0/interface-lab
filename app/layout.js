@@ -25,7 +25,7 @@ export const metadata = {
     siteName: "Davod Nikoyi",
     images: [
       {
-        url: "./images/dav.png",
+        url: "./images/og.png",
         width: 1200,
         height: 630,
         alt: "Davod Nikoyi Portfolio",
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Davod Nikoyi",
     description: "Davod's portfolio website",
-    images: ["./images/dav.png"],
+    images: ["./images/og.png"],
   },
 };
 
