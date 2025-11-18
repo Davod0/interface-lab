@@ -13,11 +13,22 @@ const geistMono = Geist_Mono({
 
 
 export const metadata = {
+  metadataBase: new URL("https://davodnikoyi.com"),
+
   title: "Davod Nikoyi",
   description: "Davod's portfolio website",
+
   icons: {
-      icon: "./images/dav.svg",
+    icon: "/images/dav.svg",
+     other: [
+      {
+        rel: "icon",
+          url: "/favicon.png",
+        type: "image/png",
+      }
+    ]
   },
+
   openGraph: {
     title: "Davod Nikoyi",
     description: "Welcome to my portfolio.",
@@ -25,7 +36,7 @@ export const metadata = {
     siteName: "Davod Nikoyi",
     images: [
       {
-        url: "./images/og.png",
+        url: "/favicon.png",
         width: 1200,
         height: 630,
         alt: "Davod Nikoyi Portfolio",
@@ -34,11 +45,12 @@ export const metadata = {
     locale: "en_SE",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Davod Nikoyi",
     description: "Davod's portfolio website",
-    images: ["./images/og.png"],
+    images: ["/favicon.png"],
   },
 };
 
