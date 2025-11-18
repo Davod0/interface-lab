@@ -20,6 +20,13 @@ export const metadata = {
 
   icons: {
     icon: "/images/dav.svg",
+     other: [
+      {
+        rel: "icon",
+          url: "/favicon.png",
+        type: "image/png",
+      }
+    ]
   },
 
   openGraph: {
@@ -29,7 +36,7 @@ export const metadata = {
     siteName: "Davod Nikoyi",
     images: [
       {
-        url: "/images/pc2.png",
+        url: "/favicon.png",
         width: 1200,
         height: 630,
         alt: "Davod Nikoyi Portfolio",
@@ -43,7 +50,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Davod Nikoyi",
     description: "Davod's portfolio website",
-    images: ["/images/pc2.png"],
+    images: ["/favicon.png"],
   },
 };
 
