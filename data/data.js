@@ -54,7 +54,7 @@ const projectsData = [
   {
     id: 2,
     title: "Pointly",
-    description: "Pointly is a web application designed to support pointing sessions for estimating the time required for different tickets, as well as retrospective meetings during development sprints. The application is built with Next.js, TypeScript and Tailwind CSS, and its backend is powered by Firebase. The application is hosted on Google Cloud Run.",
+    description: "Pointly is a web application designed to support pointing sessions for estimating the time required for different tasks, as well as retrospective meetings during development sprints. It is built with Next.js, TypeScript, and Tailwind CSS, with a backend powered by Firebase, and is hosted on Google Cloud Run.",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Davod0/pointly",
